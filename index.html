@@ -1,13 +1,182 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Deji Adesoga">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>My Portfolio</title>
 </head>
 <body>
+	<!-- Header Section -->
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">Desoga</span> Designs</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<section id="showcase">
+		<div class="container">
+			<h1>Affordable Professional Website</h1>
+			<p>We Create custom made affordable website that is tailored to your specific need. Every website we make is responsive, easy for search engine optimisation machines to track and is 100% user friendly.</p>
+		</div>
+	</section>
+
+	<section id="getstarted">
+		<div class="container">
+			<h1>Click The Get Started to Reach Us......</h1>
+			<a href="#contact"><button class="button1">Get Started</button></a>
+		</div>
+	</section>
+
+
+	<!-- About Us Section -->
+	<a href="#about" id="about"></a>
+	<h2 class="heading">Meet Our Team of Experts</h2>
+	<section id=cards>
+		<div class="container">
+			<div class="card">
+				<img src="img/team3.png">
+				<p>deji ADESOGA</p>
+				<h3>CEO/WEB DEVELOPER</h3>
+				<P>You can reach him through...</P>
+            <P>done2stay@gmail.com</P>
+           <a href="https://twitter.com/done2stay" target="_blank"><p><button class="button1">Contact</button></p></a>
+			</div>
+
+			<div class="card">
+				<img src="img/team2.png">
+				<p>sherif MUKHAIL</p>
+				<h3>GRAPHIC DESIGNER</h3>
+				<P>You can reach him through... </P>
+            <P>mukails@yahoo.co.uk</P>
+           <a href="https://web.facebook.com/alaposurplus?ref=br_rs" target="_blank"><p><button class="button1">Contact</button></p></a>
+			</div>
+
+			<div class="card">
+				<img src="img/team1.png">
+				<P>michael ADEWUSI</P>
+				<h3>PHOTOGRAPHER</h3>
+				<P>You can reach him through... </P>
+            <P>msleekone@yahoo.com</P>
+           <a href="https://web.facebook.com/adewusi.o.michael"><p><button class="button1">Contact</button></p></a>
+			</div>
+		</div>
+	</section>
+
+
+	<!--our work section -->
+	<a href="#services" id="services"></a>
+	<h2 class="heading">Take a Look at Some of Our Projects</h2>
+	<p class="container"></p>
+	<section class="project">
+		<div class="container">
+			<div class="row">
+				<div class="column2">
+					<div class="content">
+						<a href="http://amodthe1st.com/" target="_blank"><img src="img/project1.jpg"></a>
+					</div>
+				</div>
+
+
+				<div class="column2">
+					<div class="content">
+						<a href="https://desoga10.github.io/Portfolio/work.html" target="_blank"><img src="img/project2.jpg"></a>
+					</div>
+				</div>
+
+
+				<div class="column2">
+					<div class="content">
+						<a href="https://github.com/desoga10" target="_blank"><img src="img/project3.jpg"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+<!-- Technology Used Section -->
+<h2 class="heading">These are some of the technologies we used in building our clients projects...</h2>
+<section class="progress">
+<div class="container">
+	<div class="row">
+		<div class="column3">
+			<img src="img/progress.jpg">
+		</div>
+		<!-- Technologies Used section -->
+		<div class="column3">
+
+				<p>HTML</p>
+				  <div class="skills html" id="htmls" onclick="htmlFunction()">100%</div>
+
+				<p>CSS</p>
+				  <div class="skills css" id="css2" onclick="cssFunction()">100%</div>
+
+				<p>JavaScript</p>
+				  <div class="skills js" id="javascript" onclick="javascriptFunction()">100%</div>
+
+				<p>WORDPRESS</p>
+				  <div class="skills php" id="wordpress" onclick="wordpressFunction()">100%</div>
+
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
+<!--contact us  -->
+<a href="#contact" id="contact"></a>
+<div class="container5">
+  <div style="text-align:center">
+    <h2 class="heading">Contact Us</h2>
+    <p>Leave us a message, by filling-out the form:</p>
+  </div>
+  <div class="row">
+    <div class="column5">
+     <img src="img/contacto.jpeg" style="width:80%;height:500px">
+    </div>
+    <div class="column5">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="australia">Nigeria</option>
+          <option value="canada">Canada</option>
+          <option value="usa">Ghana</option>
+        </select>
+        <label for="subject">Senegal</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit" required>
+      </form>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- footer  -->
+
+<footer>
+	<p><a href="https://twitter.com/done2stay" target="_blank"> Desoga Web Design</a> | Copyright &copy; 2018</p>
+</footer>
 
 <script src="app.js"></script>
 </body>
